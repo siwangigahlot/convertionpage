@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="cover">   
+          <header>CONVERTER PAGE</header><hr><br>
+        <div class="main">
+          <label>INPUT:<input type="number" id="number"> </label><br>
+          <label > ENTERED UNIT IS: Celsius:<input type="radio" name="option" value="C" onclick="
+            var b= document.getElementById('number').value;
+          console.log(b);
+              var fah= (b*9/5)+32;
+            console.log(fah);        
+          ">
+           Fahrenheit: <input type="radio" name="option" id="F" value="F" onclick="
+           var b= document.getElementById('number').value;
+          var cel= ((b-32)*5/9);
+            console.log(cel);"
+          ></label>
+          <br><br><hr>OUTPUT:<span id="result"></span>
+          <br><button onclick="
+        if (document.getElementById==='F') {
+          document.getElementById('result').innerHTML = cel;
+          console.log('wrong');
+        }
+        else{
+          document.getElementById('result').innerHTML = fah;
+          console.log('right');
+        }
+              
+          ">CONVERT</button>
+        </div>
+    </div>
+    <script>
+     var a="";
+     var b= document.getElementById('number');
+     var fah="you";
+     var cel = "uouy";
+    </script>
+</body>
+</html>
